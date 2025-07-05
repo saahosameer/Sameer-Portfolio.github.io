@@ -649,3 +649,62 @@ body {
     background: transparent;
     transform: none;
 }
+/* ========== FIX HERO HEADING ========== */
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    line-height: 1.1; /* Tighter line spacing */
+    letter-spacing: -0.01em; /* Slightly tighter letters */
+    text-align: left;
+    color: var(--text-primary);
+    display: block; /* Ensure proper block display */
+}
+
+/* Fix text wrapping and spacing */
+.hero-content h1 span.highlight {
+    display: inline; /* Keep name on same line if possible */
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Better overall hero content alignment */
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    padding-right: 2rem; /* Add some spacing from right side */
+}
+
+/* Mobile responsive fix */
+@media (max-width: 768px) {
+    .hero-content {
+        text-align: center;
+        align-items: center;
+        padding-right: 0;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.5rem;
+        text-align: center;
+        line-height: 1.2;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 2rem;
+        line-height: 1.1;
+    }
+}
+
+/* Ensure proper text flow */
+.hero-content h1 br {
+    display: none; /* Remove any manual line breaks */
+}
