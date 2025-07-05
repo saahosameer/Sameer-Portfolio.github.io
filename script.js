@@ -93,3 +93,20 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(section);
     });
 });
+
+// Mobile menu toggle
+const mobileToggle = document.querySelector('.mobile-toggle');
+const navMenu = document.querySelector('.nav-menu');
+
+if (mobileToggle) {
+    mobileToggle.addEventListener('click', function() {
+        navMenu.classList.toggle('active');
+    });
+}
+
+// Close menu when clicking links
+document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', function() {
+        navMenu.classList.remove('active');
+    });
+});
