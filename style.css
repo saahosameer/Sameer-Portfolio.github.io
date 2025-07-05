@@ -708,3 +708,23 @@ body {
 .hero-content h1 br {
     display: none; /* Remove any manual line breaks */
 }
+
+/* Add space above main heading */
+.hero-content h1 {
+    margin-top: 2rem; /* Add space above */
+    margin-bottom: 1.5rem;
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 1.1;
+}
+
+/* Alternative: Add space to the subtitle */
+.hero-content .subtitle {
+    margin-top: 1rem; /* Space above subtitle */
+    margin-bottom: 1rem; /* Space below subtitle */
+}
+
+/* Or add padding to entire hero content */
+.hero-content {
+    padding-top: 3rem; /* Add space at top of entire content */
+}
