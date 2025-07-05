@@ -637,3 +637,15 @@ body {
         text-align: center;
     }
 }
+
+.project-link.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    background: transparent;
+    border: 1px solid var(--border-color);
+}
+
+.project-link.disabled:hover {
+    background: transparent;
+    transform: none;
+}
