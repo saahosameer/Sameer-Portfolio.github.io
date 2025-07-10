@@ -619,9 +619,8 @@ body {
 .hero-content h1 {
     font-size: 3.5rem;
     font-weight: 800;
-    margin-bottom: 1.5rem;
-    line-height: 1.2;
-    text-align: left;
+    margin-bottom: 1rem;
+    line-height: 1.1;
 }
 
 .hero-content {
